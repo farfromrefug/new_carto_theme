@@ -321,8 +321,8 @@ Map {
 @peak_icon:[nuti::osm-mountain];
 @saddle_icon:[nuti::osm-saddle];
 @peak_icon_width: @poi_icon_width;
-@peak_label_width: linear([view::zoom], (5, 5), (10, 11), (18, 12)) - 0.000001 * [rank];
-@peak_label_dy: linear([view::zoom], (5, 6), (10, 12), (18, 13));
+@peak_label_width: linear([view::zoom], (5, 5), (10, 7), (18, 10)) - 0.000001 * [rank];
+@peak_label_dy: linear([view::zoom], (5, 6), (10, 8), (18, 12));
 @peak_text_min_dist: linear([view::zoom], (5, 30), (10, 20), (18, 10));
 
 /* 6.3 Place labels */
@@ -401,7 +401,10 @@ Map {
 @poi-shop-fill: #9F43A7; 
 @poi_icon_width:linear([view::zoom], (10, 10), (12, 11), (19, 13), (20, 17)) - 0.000001 * [rank];
 @poi_halo_radius:1;
-@poi_label_width:linear([view::zoom], (10, 11), (18, 12)) - 0.000001 * [rank];
-@poi_label_wrap_width:step([view::zoom], (14, 60), (18, 100));
-@poi_label_dy: linear([view::zoom], (10, 12), (18, 13));
+@poi_label_width:linear([view::zoom], (5, 5), (10, 8), (17, 10), (18, 12)) - 0.000001 * [rank];
+@poi_national_park_label_width:linear([view::zoom], (5, 8), (10, 11), (18, 12)) - 0.000001 * [rank];
+@poi_label_wrap_width:linear([view::zoom], (14, 30), (18, 100));
+@poi_national_park_wrap_width:linear([view::zoom], (14, 60), (18, 100));
+@poi_label_dy: linear([view::zoom], (10, 10), (18, 14));
 
+@peak_label_width: linear([view::zoom], (5, 5), (10, 7), (18, 10)) - 0.000001 * [rank];
