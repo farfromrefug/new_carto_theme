@@ -7,8 +7,6 @@
 
 #transportation {
 	['mapnik::geometry_type'=3][zoom>=13]::casing {
-		[class=residential],
-		[class=unclassified],
 		[class=minor],
 		[class=service] {
 			[zoom>=14] {
@@ -80,12 +78,8 @@
 			line-width: @service-width;
 		}
 	}
-	[class=residential][zoom>=12]::casing,
-	[class=unclassified][zoom>=12]::casing,
 	[class=minor][zoom>=12]::casing, 
-	[class=minor][brunnel=bridge][zoom>=15]::bridge, 
-	[class=residential][brunnel=bridge][zoom>=15]::bridge, 
-	[class=unclassified][brunnel=bridge][zoom>=15]::bridge {
+	[class=minor][brunnel=bridge][zoom>=15]::bridge {
 		line-width: @residential-width + @residential-casing-width;
 		// [ramp=1] {
 		// 	line-width: @residential-link-width + @residential-casing-width;
@@ -470,7 +464,7 @@
 		}
 	}
 
-	[class=aerialway][zoom >= 13]::aerial {
+	[class=aerialway][zoom>=13]::aerial {
 		
 		line-width: @aerial-width + @aerial-casing-width;
 		line-color: @aerial-casing-fill;
