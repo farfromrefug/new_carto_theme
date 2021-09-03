@@ -318,12 +318,11 @@
 			line-cap: round;
 		}
 	}
-	[class=path][subclass=path][surface!=paved]::casing1,
+	[class=path][subclass=path][surface!=paved][zoom>=12]::casing1,
 	[class=path][subclass=pedestrian][zoom>=14]::casing,
 	[class=path][subclass!=path][zoom>=15]::casing,
 	[class=path][subclass=path][surface=paved][zoom>=15]::casing,
 	[class=path][brunnel=bridge][zoom>=16]::bridge1 {
-
 		[subclass=path][sac_scale!=null],
 		[zoom>=13] {
 			[subclass=cycleway],[bicycle=designated][mtb_type=null][surface!=unpaved] {
