@@ -259,7 +259,7 @@ Map {
 @footway-fill: #ffffff;
 @steps-fill: @path;
 @cycleway-fill: 0;
-@cycleway-inner-fill: linear([view::zoom], (15, rgba(0, 110, 255, 0.1)), (16, rgba(0, 110, 255, 0.6)));
+@cycleway-inner-fill: linear([view::zoom], (15, #bb6868), (16, rgba(0, 110, 255, 0.6)));
 @bridleway-fill: green;
 @track-fill: #ffffff;
 @aeroway-fill: #c7cce5;
@@ -310,6 +310,7 @@ Map {
 @waterway_label_dy:-2;
 @waterway_text_width: linear([view::zoom], (10, 6.0), (15, 7.0), (16, 9.0), (17, 12.0));
 @river_text_width: linear([view::zoom], (10, 6), (15, 10), (18, 12));
+@waterway_label_spacing: 0;
 
 @canal_width: linear([view::zoom], (13, 0.7), (14, 1), (15, 1.6));
 @stream-width: linear([view::zoom], (13, 0.7), (14, 1), (15, 1.6));
@@ -332,7 +333,7 @@ Map {
 /* 6.3 Place labels */
 
 @city-label-icon-size: 4;
-@city-label-dy: linear([view::zoom], (4, -5), (7.99, -9), (8, 0));
+@city-label-dy: linear([view::zoom], (4, -5), (7.99, -10), (8, 0));
 @city-label-width: linear([view::zoom], (4, 10), (5, 11), (6, 12), (7, 13), (12, 18))- 0.000001 * [rank];
 @city-label-wrap-width: step([view::zoom], (4, 40), (5, 50), (6, 60));
 @city_label_min_dist: 1;
@@ -409,6 +410,6 @@ Map {
 @poi_national_park_label_width:linear([view::zoom], (5, 8), (10, 11), (18, 12)) - 0.000001 * [rank];
 @poi_label_wrap_width:linear([view::zoom], (14, 50), (18, 100));
 @poi_national_park_wrap_width:linear([view::zoom], (14, 60), (18, 100));
-@poi_label_dy: linear([view::zoom], (10, 10), (18, 14));
+@poi_label_dy: linear([view::zoom], (10, 10), (12, 11), (19, 13), (20, 18));
 
 @peak_label_width: linear([view::zoom], (5, 5), (10, 7), (18, 10)) - 0.000001 * [rank];
