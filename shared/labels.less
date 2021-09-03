@@ -408,9 +408,12 @@
 		}
 	}
 }
-#transportation_name[subclass!=footway]{
+
+// we ignore footway names as the almost always duplicate the street name
+#transportation_name{
 	[class=track][zoom>=13],
 	[class=path][subclass=path][zoom>=14],
+	[class=path][subclass=footway][zoom>=18],
 	[class=path][zoom>=15] {
 		text-name: @name;
 		text-fill: @road_small_label_fill;
