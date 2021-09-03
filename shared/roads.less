@@ -424,13 +424,16 @@
 	[class=rail][brunnel=bridge]::transit,
 	[class=transit][brunnel=bridge]::transit, 
 	[class=rail][brunnel=tunnel]::casing,
-	[class=transit][brunnel=tunnel]::casing{
+	[class=transit][brunnel=tunnel]::casing {
 	
 		[brunnel=bridge][zoom>=15] {
 			line-color: @railway-bridge-casing;
 		}
 		line-color: @railway-line;
 		line-width: @railway-line-width;
+		[brunnel=tunnel][zoom>=14] {
+			line-dasharray: 5,3;
+		}
 
 		::inner {
 			line-color: @railway-track-line;
