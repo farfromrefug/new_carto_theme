@@ -13,9 +13,9 @@
 		line-width: @stream-width;
 	}
 	[class=canal][zoom>=12]{
-		[brunnel=tunnel] {
+		[brunnel=tunnel] [zoom>=14]{
 			casing/line-color: @tunnel-casing;
-			casing/line-width: @canal_width + linear([view::zoom], (12, 0.5), (15, 2));
+			casing/line-width: @canal_width + linear([view::zoom], (14, 0.1), (15, 2));
 		}
 		line-color: @river; 
 		line-width: @canal_width;
