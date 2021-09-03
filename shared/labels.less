@@ -47,14 +47,15 @@
 
 #landcover[name!=null],
 #landuse[name!=null] {
+  [class=quarry][zoom>=14],
   [class=industrial][zoom>=15],
   [class=military][zoom>=15],
   [zoom>=16] {
     text-name: @name;
     text-face-name: @mont;
-	text-min-distance:50;
     text-fill: @building_label;
     text-size: 10;
+	text-min-distance:150;
     text-wrap-width: 10;
 	text-halo-fill: @peak_halo;
 	text-halo-rasterizer: fast;
