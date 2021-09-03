@@ -233,12 +233,10 @@
 			::icon {
 				text-placement: [nuti::markers3d];
 				text-name: [nuti::osm-circle];
-				// text-allow-overlap: true;
 				text-face-name: @osm;
 				text-halo-fill: @place_halo;
 				text-halo-radius: @place_halo_radius;
 				text-halo-rasterizer: fast;
-	
 				text-min-distance:@city_label_min_dist;
 				text-fill: @city_label;
 				text-size: @city-label-icon-size;
@@ -253,16 +251,16 @@
 			text-halo-fill: @place_halo;
 			text-halo-radius: @place_halo_radius;
 			text-halo-rasterizer: fast;
-				[zoom >=7] {
-					text-face-name: @mont_bd;
-				}
-				text-min-distance:@city_label_min_dist;
-				text-dy: @city-label-dy;
-				text-fill: @city_label;
-				text-size: @city-label-width;
-				text-wrap-width: @city-label-wrap-width;
-				text-wrap-before:true;
+			[zoom >=7] {
+				text-face-name: @mont_bd;
 			}
+			text-min-distance:@city_label_min_dist;
+			text-dy: @city-label-dy;
+			text-fill: @city_label;
+			text-size: @city-label-width;
+			text-wrap-width: @city-label-wrap-width;
+			text-wrap-before:true;
+		}
 	}
 	[class=quarter]::label,
 	[class=neighbourhood]::label {
