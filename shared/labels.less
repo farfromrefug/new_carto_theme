@@ -428,9 +428,9 @@
 		}
 	}
 	
-	[class=motorway],
-	[class=trunk],
-	[class=primary]{
+	[class=motorway][zoom>=5],
+	[class=trunk][zoom>=5],
+	[class=primary][zoom>=7]{
 		text-name: @name;
 		text-placement: line;
 		text-face-name: @mont_md;
@@ -442,11 +442,11 @@
 	}
 
 
-	[class=tertiary],
-	[class=secondary],
-	[class=minor],
-	[class=service],
-	[class=aerialway]{
+	[class=tertiary][zoom>=11],
+	[class=secondary][zoom>=9],
+	[class=minor][zoom>=12],
+	[class=service][zoom>=15],
+	[class=aerialway][zoom>=13]{
 		text-name: @name;
 		text-placement: line;
 		text-face-name: @mont_md;
