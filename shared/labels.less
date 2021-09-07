@@ -325,7 +325,6 @@
 }
 
 #waterway{
-	[class=stream][zoom>=13],
 	[class=riverbank][zoom>=13],
 	[class=river][zoom>=11],
 	[class=stream][zoom>=13],
@@ -482,6 +481,7 @@
 			text-halo-fill: @poi_halo;
 			text-halo-rasterizer: fast;
 			text-halo-radius: @poi_halo_radius;
+			text-min-distance:0;
 			text-fill: @poi-fill;
 			#park, [class=park] {
 				text-fill: @poi-park-fill;
@@ -542,6 +542,7 @@
 				text-size: @poi_label_width;
 				text-wrap-width: @poi_label_wrap_width;
 				text-wrap-before:true;
+				text-min-distance:0;
 				text-feature-id: @featureId;
 				text-dy: @poi_label_dy;
 				text-fill: @poi-fill;
