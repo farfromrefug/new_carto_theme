@@ -517,7 +517,7 @@
 		// line-cap: round;
 		// line-join: round;
 		[ref!=null]{
-			text-fill: [textcolor] ? replacxe([textcolor],'-.*', '') : ([color] ? [color] : @road_small_label_fill);
+			text-fill: [textcolor] ? replace([textcolor],'-.*', '') : ([color] ? [color] : @road_small_label_fill);
 			text-name: [ref];
 			text-placement: line;
 			text-wrap-before: true;
