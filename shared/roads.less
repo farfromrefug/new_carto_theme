@@ -5,8 +5,8 @@
 
 
 
-#transportation {
-	['mapnik::geometry_type'=3][zoom>=13]::casing {
+#transportation['mapnik::geometry_type'=3] {
+	[zoom>=13]::casing {
 		[class=minor],
 		[class=service] {
 			[zoom>=14] {
@@ -48,6 +48,10 @@
 			line-width:0.5;
 		}
 	}
+}
+
+
+#transportation['mapnik::geometry_type'=2] {
 	[class=service][zoom>=15]::casing, 
 	[class=service][brunnel=bridge][zoom>=15]::bridge {
 		line-width: @service-width + @service-casing-width;
@@ -287,7 +291,7 @@
 		}
 	}
 
-	[class=via_ferrata][zoom>=16] {
+	[class=via_ferrata][zoom>=16]::casing {
 		line-color: @via_ferrata;
 		line-dasharray: @via_ferrata-dasharray;
 		line-width: @via_ferrata-line-width
