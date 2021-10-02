@@ -331,7 +331,7 @@
 		[subclass=path][sac_scale!=null],
 		[zoom>=13] {
 			[subclass=cycleway],[bicycle=designated][mtb_type=null][surface!=unpaved] {
-				[zoom >= 14] {
+				[zoom >= 14][@cycleway-fill!=0] {
 					cycleway/line-color: @cycleway-fill;
 					cycleway/line-width: @path-width + @path-casing-width+ @cycleway-casing-width;
 				}
