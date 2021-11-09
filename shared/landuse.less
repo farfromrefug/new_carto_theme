@@ -1,10 +1,12 @@
 @name: [nuti::lang] ? ([name:[nuti::lang]] ? [name:[nuti::lang]] : ([name:[nuti::fallback_lang]] ? [name:[nuti::fallback_lang]] : [name])) : [name];
+
 Map {
   background-color: @background;
   south-pole-color: @background;
   north-pole-color: @water;
-	font-directory: url(fonts/);
+  font-directory: url(fonts/);
 }
+
 #landcover['mapnik::geometry_type'=3] {
   [class=tidalflat] {
     polygon-fill: @mud;
@@ -279,5 +281,4 @@ Map {
   [class=apron] {
     polygon-fill: @apron-fill;
   }
-
 }
