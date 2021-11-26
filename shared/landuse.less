@@ -260,7 +260,7 @@ Map {
 }
 #building['nuti::buildings'>0][zoom>=14] {
     ['nuti::buildings'=2][zoom>=17]::3d{
-        building-height: [render_height] ? [render_height] : 10;
+        building-height: [render_height] ? [render_height] : 5;
         building-min-height: [render_min_height];
         building-fill: @building-fill;
         building-fill-opacity: 0.45;
@@ -281,4 +281,5 @@ Map {
   [class=apron] {
     polygon-fill: @apron-fill;
   }
+
 }
