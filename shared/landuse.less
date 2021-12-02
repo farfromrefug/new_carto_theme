@@ -235,16 +235,7 @@ Map {
     text-placement: line;
     text-wrap-width: 100;
   }  
-  [class=rock][subclass=cliff][zoom>=12]::cliff { 
-    line-color: @cliff;
-    line-width: @cliff-width;
-    [zoom>=15] {
-      line/line-offset: linear([view::zoom], (15, 0), (16,-2));
-      line/line-color: @cliff; 
-      line/line-dasharray: 1,8;
-      line/line-width: linear([view::zoom], (15, 0), (16,3));
-    }
-  }
+  
   [class=barrier][zoom>=15] {
 		[subclass=citywalls],
 		[subclass=city_wall] {
